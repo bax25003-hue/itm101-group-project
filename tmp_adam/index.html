@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalPal - Nutrition Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CalPal</h1>
+      <p class="subtitle">Track your daily nutrition</p>
+
+      ```
+      <!-- Food Input Form -->
+      <form id="foodForm">
+        <label>Food Name</label>
+        <input
+          type="text"
+          id="food"
+          placeholder="e.g. Chicken Breast"
+          required
+        />
+
+        <label>Calories</label>
+        <input type="number" id="calories" placeholder="e.g. 250" required />
+
+        <label>Protein (g)</label>
+        <input type="number" id="protein" placeholder="e.g. 30" required />
+
+        <label>Carbohydrates (g)</label>
+        <input type="number" id="carbs" placeholder="e.g. 10" required />
+
+        <label>Fats (g)</label>
+        <input type="number" id="fats" placeholder="e.g. 5" required />
+
+        <button type="submit">Add Food</button>
+      </form>
+
+      <!-- Totals Section -->
+      <div class="totals">
+        <h2>Daily Totals</h2>
+        <div class="totals-grid">
+          <div class="card">
+            <h3>Calories</h3>
+            <p id="totalCalories">0</p>
+          </div>
+          <div class="card">
+            <h3>Protein</h3>
+            <p><span id="totalProtein">0</span> g</p>
+          </div>
+          <div class="card">
+            <h3>Carbs</h3>
+            <p><span id="totalCarbs">0</span> g</p>
+          </div>
+          <div class="card">
+            <h3>Fats</h3>
+            <p><span id="totalFats">0</span> g</p>
+          </div>
+        </div>
+      </div>
+      ```
+    </div>
+
+    <!-- JavaScript to connect to backend -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
